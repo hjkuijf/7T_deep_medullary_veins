@@ -1,0 +1,671 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "813 -707 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MLImageFormatLoad
+    updateMode = AutoUpdate
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    suppressCheckSumTests = FALSE
+    fileName = ""
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "629 -707 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "801 424 332 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MLImageFormatSave
+    compression = BZip2
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = TRUE
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    updateMode = AutoUpdate
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = ""
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "917 -499 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "818 432 299 395"
+        sizeHint = "299 395"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkImageFileReader
+    fileDataType = float
+    autoDetermineDataType = TRUE
+    correctSubVoxelShift = TRUE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = TypeNotApplicable
+    componentType = float
+    pixelType = SCALAR
+    loaderType = NiftiImageIO
+    outputMetaDataStr = "ITK_FileNotes : mnc2nii mni_icbm152_nlin_sym_09c/mni_icbm152_t1_tal_nlin_sym_09c.mnc mni_icbm15
+aux_file : 
+bitpix : 16
+cal_max : 100
+cal_min : 0
+datatype : 4
+descrip : mnc2nii mni_icbm152_nlin_sym_09c/mni_icbm152_t1_tal_nlin_sym_09c.mnc mni_icbm15
+dim[0] : 3
+dim[1] : 193
+dim[2] : 229
+dim[3] : 193
+dim[4] : 1
+dim[5] : 1
+dim[6] : 0
+dim[7] : 0
+dim_info : 
+intent_code : 0
+intent_name : 
+intent_p1 : 0
+intent_p2 : 0
+intent_p3 : 0
+pixdim[0] : 0
+pixdim[1] : 1
+pixdim[2] : 1
+pixdim[3] : 1
+pixdim[4] : 0
+pixdim[5] : 1
+pixdim[6] : 0
+pixdim[7] : 0
+qform_code : 0
+qoffset_x : 0
+qoffset_y : 0
+qoffset_z : 0
+quatern_b : 0
+quatern_c : 0
+quatern_d : 0
+scl_inter : 49.2854
+scl_slope : 0.00150375
+sform_code : 4
+slice_code : 
+slice_duration : 0
+slice_end : 0
+slice_start : 0
+srow_x : 1 0 0 -96
+srow_y : 0 1 0 -132
+srow_z : 0 0 1 -78
+toffset : 0
+vox_offset : 352
+xyzt_units : 
+
+"
+    unresolvedFileName = $(NETWORK)/mni/mni_icbm152_t1_tal_nlin_sym_09c.nii
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "765 -499 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "727 578 480 103"
+        sizeHint = "480 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalFileName1
+    localName = $(NETWORK)/mni/mni_icbm152_t1_tal_nlin_sym_09c.nii
+    checkIfFileExists = TRUE
+  }
+}
+module MarkerToMask {
+  internal  {
+    frame = "649 -627 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "835 545 265 168"
+        sizeHint = "265 168"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MarkerToMask
+    maskValue = 1
+    incrementalStartValue = 1
+    backgroundValue = 0
+    autoUpdate = FALSE
+    writeMode = MaskValue
+    outputType = int16
+  }
+}
+module MaskToMarkers {
+  internal  {
+    frame = "577 -499 144 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "823 556 289 146"
+        sizeHint = "289 146"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MaskToMarkers
+    lowerThreshold = 0
+    setType = User
+    type = 0
+    updateMode = Off
+    vectorMode = Zero
+  }
+}
+module Threshold {
+  internal  {
+    frame = "605 -395 88 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "843 482 278 294"
+        sizeHint = "248 294"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 0.1
+    relativeThreshold = FALSE
+    comparisonOperator = GreaterEqual
+    conditionTrueWriteValue = UserDef
+    userConditionTrueValue = 1
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 0
+  }
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "573 -271 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WML
+    updateMode = AutoUpdate
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    suppressCheckSumTests = FALSE
+    fileName = ""
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "621 -899 120 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LoadBase3
+    autoUpdate = AutoClear
+    nodeName = ""
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "633 -835 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SaveBase3
+    nodeName = XMarkerList
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module BaseBypass {
+  internal  {
+    frame = "393 -271 128 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = VesselPoints
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "497 -899 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LoadBase2
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.definite.roi.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "369 -899 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LoadBase1
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.definite.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "369 -835 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "693 521 548 216"
+        sizeHint = "548 216"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SaveBase2
+    nodeName = XMarkerList
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.definite.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "37 -279 88 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1007 588 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1184 393 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Definite
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = "X:\\Zoe\\Willem\\Cases_AD\\8\\Seedpoints\\final.definite.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "505 -835 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "693 521 548 216"
+        sizeHint = "548 216"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SaveBase1
+    nodeName = XMarkerList
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.definite.roi.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module XMarkerListRadiusSearch {
+  internal  {
+    frame = "1 -819 176 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "814 477 331 305"
+        sizeHint = "306 305"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerListRadiusSearch
+    onInputChangeBehavior = Clear
+    inRadius = 15
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "-215 -715 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "716 578 502 103"
+        sizeHint = "502 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalFileName
+    localName = $(NETWORK)/mni/expanded_ventricular_surface.xml
+    checkIfFileExists = TRUE
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "-63 -719 208 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ExpandedVentricularVolumeMNI
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = D:/Hugo/MeVisLab/ISI/Hugo/Modules/Macros/ISIPeriventricularVein/mni/expanded_ventricular_surface.xml
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "253 -899 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LoadBase
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "253 -835 88 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SaveBase
+    nodeName = XMarkerList
+    filename = "X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI\\final.mni.xml"
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module Transformix {
+  internal  {
+    frame = "217 -579 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "734 294 721 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix1
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI/temp
+    transformationFile = "X:/Zoe/Willem/Cases_AD/8/MNI\\MNI_to_T1.txt"
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = FALSE
+    succeeded = TRUE
+    logToDebugOutput = TRUE
+  }
+}
+module Transformix {
+  internal  {
+    frame = "201 -451 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "822 422 349 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = X:/Zoe/Willem/Cases_AD/8/SeedpointsToMNI/temp
+    transformationFile = "X:/Zoe/Willem/Cases_AD/8/MNI\\T1_to_E2.txt"
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = FALSE
+    succeeded = TRUE
+    logToDebugOutput = TRUE
+  }
+}
+module Elastix {
+  internal  {
+    frame = "13 -459 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "200 242 434 808"
+        sizeHint = "434 808"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Elastix
+    temporaryDirectory = C:/Users/hugo/AppData/Local/Temp
+    parameterFile1 = ""
+    parameterFile2 = ""
+    parameterFile3 = ""
+    otherArguments = ""
+    status = initialized
+    elastixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\elastix.exe"
+    transformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    elastixOutput = ""
+    removeIntermediateFiles = TRUE
+    sendOutputToLogWindowTo = TRUE
+    createDeformationField = TRUE
+    createJacobianImage = TRUE
+    createJacobianMatrixImage = TRUE
+    numberOfThreads = 2
+    initialTransformationFile = ""
+    outputImageDataType = float
+    selectedPreset = windows64_v4.7
+    presets = ,linux64_v4.6,windows32_v4.7,windows64_v4.7
+    logToDebugOutput = TRUE
+  }
+}
+module BaseBypass {
+  internal  {
+    frame = "213 -267 104 56"
+    moduleGroupName = SeedpointsToMNI
+  }
+  fields  {
+    instanceName = BaseBypass
+    bypass = TRUE
+    noBypass = FALSE
+  }
+}
+connections  {
+  MLImageFormatSave.input0 = MarkerToMask.output0
+  itkImageFileReader.unresolvedFileName = LocalFileName1.trueName
+  MarkerToMask.input0 = itkImageFileReader.output0
+  MarkerToMask.inputXMarkerList = Transformix1.outputXMarkerList
+  MaskToMarkers.input0 = Threshold.output0
+  Threshold.input0 = WML.output0
+  SaveBase3.inObject = Transformix1.outputXMarkerList
+  SaveBase2.inObject = Transformix1.outputXMarkerList
+  SaveBase1.inObject = XMarkerListRadiusSearch.outXMarkerList
+  XMarkerListRadiusSearch.inXMarkerList0 = ExpandedVentricularVolumeMNI.outObject
+  XMarkerListRadiusSearch.inXMarkerList1 = Transformix1.outputXMarkerList
+  ExpandedVentricularVolumeMNI.filename = LocalFileName.trueName
+  SaveBase.inObject = Transformix1.outputXMarkerList
+  Transformix1.inputXMarkerList = Transformix.outputXMarkerList
+  Transformix1.tranformixExecutable = Elastix.transformixExecutable
+  Transformix.inputXMarkerList = BaseBypass.baseOut0
+  Transformix.tranformixExecutable = Elastix.transformixExecutable
+}
+networkModel = ""

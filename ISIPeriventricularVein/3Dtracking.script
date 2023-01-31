@@ -1,0 +1,58 @@
+Interface  {
+  Inputs {
+    Field inputE2 {
+      internalName = E2.input0
+    }
+    Field inputVMask {
+      internalName = VMask.input0
+    }
+  }
+  Outputs {
+    Field outputGraph {
+      internalName = LoadVesselGraph.outObject
+    }
+    Field outputPoints {
+      internalName = LoadVesselPoints.outObject
+    }
+  }
+  Parameters {
+    Field outputDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    
+    Field getOutput {
+      type = Trigger
+    }
+    Field seedpointDir {
+      type = String
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL_BASENAME).py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+Window {
+  Category Main {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+    
+  }
+  
+  Category Settings {
+    Panel {
+      module = TubularTracking
+    }
+  }
+}

@@ -1,0 +1,755 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "977 -347 160 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = VSurface
+    compression = None
+    hintName0 = ""
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = ""
+    boolHintVal0 = FALSE
+    dblHintVisible0 = FALSE
+    intHintVisible0 = FALSE
+    strHintVisible0 = FALSE
+    boolHintVisible0 = FALSE
+    hintName1 = ""
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVisible1 = FALSE
+    intHintVisible1 = FALSE
+    strHintVisible1 = FALSE
+    boolHintVisible1 = FALSE
+    hintName2 = ""
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVisible2 = FALSE
+    intHintVisible2 = FALSE
+    strHintVisible2 = FALSE
+    boolHintVisible2 = FALSE
+    hintName3 = ""
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVisible3 = FALSE
+    intHintVisible3 = FALSE
+    strHintVisible3 = FALSE
+    boolHintVisible3 = FALSE
+    hintName4 = ""
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVisible4 = FALSE
+    intHintVisible4 = FALSE
+    strHintVisible4 = FALSE
+    boolHintVisible4 = FALSE
+    hintName5 = ""
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVisible5 = FALSE
+    intHintVisible5 = FALSE
+    strHintVisible5 = FALSE
+    boolHintVisible5 = FALSE
+    hintName6 = ""
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVisible6 = FALSE
+    intHintVisible6 = FALSE
+    strHintVisible6 = FALSE
+    boolHintVisible6 = FALSE
+    hintName7 = ""
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVisible7 = FALSE
+    intHintVisible7 = FALSE
+    strHintVisible7 = FALSE
+    boolHintVisible7 = FALSE
+    hintName8 = ""
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVisible8 = FALSE
+    intHintVisible8 = FALSE
+    strHintVisible8 = FALSE
+    boolHintVisible8 = FALSE
+    hintName9 = ""
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    dblHintVisible9 = FALSE
+    intHintVisible9 = FALSE
+    strHintVisible9 = FALSE
+    boolHintVisible9 = FALSE
+    progress = 0
+    updateMode = AutoUpdate
+    isSaving = FALSE
+    status = ""
+    tagList = ""
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    fileName = ""
+  }
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "797 -351 152 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = VMask
+    compression = None
+    hintName0 = ""
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = ""
+    boolHintVal0 = FALSE
+    dblHintVisible0 = FALSE
+    intHintVisible0 = FALSE
+    strHintVisible0 = FALSE
+    boolHintVisible0 = FALSE
+    hintName1 = ""
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVisible1 = FALSE
+    intHintVisible1 = FALSE
+    strHintVisible1 = FALSE
+    boolHintVisible1 = FALSE
+    hintName2 = ""
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVisible2 = FALSE
+    intHintVisible2 = FALSE
+    strHintVisible2 = FALSE
+    boolHintVisible2 = FALSE
+    hintName3 = ""
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVisible3 = FALSE
+    intHintVisible3 = FALSE
+    strHintVisible3 = FALSE
+    boolHintVisible3 = FALSE
+    hintName4 = ""
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVisible4 = FALSE
+    intHintVisible4 = FALSE
+    strHintVisible4 = FALSE
+    boolHintVisible4 = FALSE
+    hintName5 = ""
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVisible5 = FALSE
+    intHintVisible5 = FALSE
+    strHintVisible5 = FALSE
+    boolHintVisible5 = FALSE
+    hintName6 = ""
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVisible6 = FALSE
+    intHintVisible6 = FALSE
+    strHintVisible6 = FALSE
+    boolHintVisible6 = FALSE
+    hintName7 = ""
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVisible7 = FALSE
+    intHintVisible7 = FALSE
+    strHintVisible7 = FALSE
+    boolHintVisible7 = FALSE
+    hintName8 = ""
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVisible8 = FALSE
+    intHintVisible8 = FALSE
+    strHintVisible8 = FALSE
+    boolHintVisible8 = FALSE
+    hintName9 = ""
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    dblHintVisible9 = FALSE
+    intHintVisible9 = FALSE
+    strHintVisible9 = FALSE
+    boolHintVisible9 = FALSE
+    progress = 0
+    updateMode = AutoUpdate
+    isSaving = FALSE
+    status = ""
+    tagList = ""
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    fileName = ""
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1165 389 72 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = V
+    noBypass = FALSE
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "1149 -275 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "801 424 332 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VSurfaceSave
+    compression = BZip2
+    hintName0 = "Optimize Data"
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = TRUE
+    dblHintVisible0 = FALSE
+    intHintVisible0 = FALSE
+    strHintVisible0 = FALSE
+    boolHintVisible0 = TRUE
+    hintName1 = ""
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVisible1 = FALSE
+    intHintVisible1 = FALSE
+    strHintVisible1 = FALSE
+    boolHintVisible1 = FALSE
+    hintName2 = ""
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVisible2 = FALSE
+    intHintVisible2 = FALSE
+    strHintVisible2 = FALSE
+    boolHintVisible2 = FALSE
+    hintName3 = ""
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVisible3 = FALSE
+    intHintVisible3 = FALSE
+    strHintVisible3 = FALSE
+    boolHintVisible3 = FALSE
+    hintName4 = ""
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVisible4 = FALSE
+    intHintVisible4 = FALSE
+    strHintVisible4 = FALSE
+    boolHintVisible4 = FALSE
+    hintName5 = ""
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVisible5 = FALSE
+    intHintVisible5 = FALSE
+    strHintVisible5 = FALSE
+    boolHintVisible5 = FALSE
+    hintName6 = ""
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVisible6 = FALSE
+    intHintVisible6 = FALSE
+    strHintVisible6 = FALSE
+    boolHintVisible6 = FALSE
+    hintName7 = ""
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVisible7 = FALSE
+    intHintVisible7 = FALSE
+    strHintVisible7 = FALSE
+    boolHintVisible7 = FALSE
+    hintName8 = ""
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVisible8 = FALSE
+    intHintVisible8 = FALSE
+    strHintVisible8 = FALSE
+    boolHintVisible8 = FALSE
+    hintName9 = ""
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    dblHintVisible9 = FALSE
+    intHintVisible9 = FALSE
+    strHintVisible9 = FALSE
+    boolHintVisible9 = FALSE
+    progress = 1
+    updateMode = AutoUpdate
+    isSaving = FALSE
+    status = "Image saved"
+    tagList = "Tag[0] = (ML_TAG_LIST_SIZE_IN_BYTES, 1415                    )
+Tag[1] = (ML_ENDIANESS, 0)
+Tag[2] = (ML_USES_CHECKSUM, 1)
+Tag[3] = (ML_USES_PARTIAL_PAGES, 1)
+Tag[4] = (ML_DEFAULT_VOXEL_TAG, 0)
+Tag[5] = (ML_COMPRESSOR_NAME, BZip2)
+Tag[6] = (ML_COMPRESSOR_VERSION, 1.0.5, 10-Dec-2007)
+Tag[7] = (ML_NUM_COMPRESSION_TAGS, 1)
+Tag[8] = (ML_COMPRESSION_TAG_0:Optimize Data, TRUE)
+Tag[9] = (ML_NUM_USER_TAGS, 0)
+Tag[10] = (ML_NUM_PRIVATE_TAGS, 0)
+Tag[11] = (ML_SIZE_COMPENSATION,                                                                 )
+Tag[12] = (ML_IMAGE_DTYPE, float)
+Tag[13] = (ML_IMAGE_DTYPE_SIZE, 4)
+Tag[14] = (ML_IMAGE_DTYPE_DESC, f)
+Tag[15] = (ML_MIN_VOXEL_VALUE, 0)
+Tag[16] = (ML_MAX_VOXEL_VALUE, 1)
+Tag[17] = (ML_IMAGE_EXT_X, 512)
+Tag[18] = (ML_IMAGE_EXT_Y, 512)
+Tag[19] = (ML_IMAGE_EXT_Z, 343)
+Tag[20] = (ML_IMAGE_EXT_C, 1)
+Tag[21] = (ML_IMAGE_EXT_T, 1)
+Tag[22] = (ML_IMAGE_EXT_U, 1)
+Tag[23] = (ML_PAGE_EXT_X, 128)
+Tag[24] = (ML_PAGE_EXT_Y, 128)
+Tag[25] = (ML_PAGE_EXT_Z, 1)
+Tag[26] = (ML_PAGE_EXT_C, 1)
+Tag[27] = (ML_PAGE_EXT_T, 1)
+Tag[28] = (ML_PAGE_EXT_U, 1)
+Tag[29] = (ML_WORLD_MATRIX_00, 0.390183984375)
+Tag[30] = (ML_WORLD_MATRIX_01, 0.015626640625)
+Tag[31] = (ML_WORLD_MATRIX_02, -0.00897205603263974)
+Tag[32] = (ML_WORLD_MATRIX_03, -104.799)
+Tag[33] = (ML_WORLD_MATRIX_10, -0.0109704296875)
+Tag[34] = (ML_WORLD_MATRIX_11, 0.36418046875)
+Tag[35] = (ML_WORLD_MATRIX_12, 0.126207217860818)
+Tag[36] = (ML_WORLD_MATRIX_13, -97.9939)
+Tag[37] = (ML_WORLD_MATRIX_20, 0.0149703515625)
+Tag[38] = (ML_WORLD_MATRIX_21, -0.140414453125)
+Tag[39] = (ML_WORLD_MATRIX_22, 0.326332056161642)
+Tag[40] = (ML_WORLD_MATRIX_23, -13.3976)
+Tag[41] = (ML_WORLD_MATRIX_30, 0)
+Tag[42] = (ML_WORLD_MATRIX_31, 0)
+Tag[43] = (ML_WORLD_MATRIX_32, 0)
+Tag[44] = (ML_WORLD_MATRIX_33, 1)
+Tag[45] = (ML_NUM_C_DIM_INFOS, 1)
+Tag[46] = (ML_C_DIM_INFOS_0, LUMINANCE)
+Tag[47] = (ML_NUM_T_DIM_INFOS, 0)
+Tag[48] = (ML_NUM_U_DIM_INFOS, 0)
+Tag[49] = (ML_NUM_USER_IMAGE_PROPERTY_TAGS, 1)
+Tag[50] = (ML_USER_IMAGE_PROPERTY_TAG_0:DicomTreeImagePropertyExtension:MLDicomTreeImagePropertyExtension, )
+"
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = D:/data/Zoe/data/3978/Session_2/VSurface/VSurface.mlimage
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "1177 -171 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "860 597 217 64"
+        sizeHint = "215 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic2
+    function = Difference
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module FastMorphology {
+  internal  {
+    frame = "1237 -67 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "790 619 338 392"
+        sizeHint = "338 392"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FastMorphology
+    morphologicOperation = Dilation
+    xSize = 1
+    ySize = 1
+    zSize = 1
+    cSize = 0
+    tSize = 0
+    uSize = 0
+    useInputMaxValue = FALSE
+    userSetMaxValue = 1
+    autoUpdate = TRUE
+    useGreyScaleMorphology = FALSE
+    boundaryHandling = "Propagate boundary values"
+    boundaryFillValue = 0
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "965 -67 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "801 424 332 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VMaskSave
+    compression = BZip2
+    hintName0 = "Optimize Data"
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = TRUE
+    dblHintVisible0 = FALSE
+    intHintVisible0 = FALSE
+    strHintVisible0 = FALSE
+    boolHintVisible0 = TRUE
+    hintName1 = ""
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVisible1 = FALSE
+    intHintVisible1 = FALSE
+    strHintVisible1 = FALSE
+    boolHintVisible1 = FALSE
+    hintName2 = ""
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVisible2 = FALSE
+    intHintVisible2 = FALSE
+    strHintVisible2 = FALSE
+    boolHintVisible2 = FALSE
+    hintName3 = ""
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVisible3 = FALSE
+    intHintVisible3 = FALSE
+    strHintVisible3 = FALSE
+    boolHintVisible3 = FALSE
+    hintName4 = ""
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVisible4 = FALSE
+    intHintVisible4 = FALSE
+    strHintVisible4 = FALSE
+    boolHintVisible4 = FALSE
+    hintName5 = ""
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVisible5 = FALSE
+    intHintVisible5 = FALSE
+    strHintVisible5 = FALSE
+    boolHintVisible5 = FALSE
+    hintName6 = ""
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVisible6 = FALSE
+    intHintVisible6 = FALSE
+    strHintVisible6 = FALSE
+    boolHintVisible6 = FALSE
+    hintName7 = ""
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVisible7 = FALSE
+    intHintVisible7 = FALSE
+    strHintVisible7 = FALSE
+    boolHintVisible7 = FALSE
+    hintName8 = ""
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVisible8 = FALSE
+    intHintVisible8 = FALSE
+    strHintVisible8 = FALSE
+    boolHintVisible8 = FALSE
+    hintName9 = ""
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    dblHintVisible9 = FALSE
+    intHintVisible9 = FALSE
+    strHintVisible9 = FALSE
+    boolHintVisible9 = FALSE
+    progress = 1
+    updateMode = AutoUpdate
+    isSaving = FALSE
+    status = "Image saved"
+    tagList = "Tag[0] = (ML_TAG_LIST_SIZE_IN_BYTES, 1415                    )
+Tag[1] = (ML_ENDIANESS, 0)
+Tag[2] = (ML_USES_CHECKSUM, 1)
+Tag[3] = (ML_USES_PARTIAL_PAGES, 1)
+Tag[4] = (ML_DEFAULT_VOXEL_TAG, 0)
+Tag[5] = (ML_COMPRESSOR_NAME, BZip2)
+Tag[6] = (ML_COMPRESSOR_VERSION, 1.0.5, 10-Dec-2007)
+Tag[7] = (ML_NUM_COMPRESSION_TAGS, 1)
+Tag[8] = (ML_COMPRESSION_TAG_0:Optimize Data, TRUE)
+Tag[9] = (ML_NUM_USER_TAGS, 0)
+Tag[10] = (ML_NUM_PRIVATE_TAGS, 0)
+Tag[11] = (ML_SIZE_COMPENSATION,                                                                 )
+Tag[12] = (ML_IMAGE_DTYPE, float)
+Tag[13] = (ML_IMAGE_DTYPE_SIZE, 4)
+Tag[14] = (ML_IMAGE_DTYPE_DESC, f)
+Tag[15] = (ML_MIN_VOXEL_VALUE, 0)
+Tag[16] = (ML_MAX_VOXEL_VALUE, 1)
+Tag[17] = (ML_IMAGE_EXT_X, 512)
+Tag[18] = (ML_IMAGE_EXT_Y, 512)
+Tag[19] = (ML_IMAGE_EXT_Z, 343)
+Tag[20] = (ML_IMAGE_EXT_C, 1)
+Tag[21] = (ML_IMAGE_EXT_T, 1)
+Tag[22] = (ML_IMAGE_EXT_U, 1)
+Tag[23] = (ML_PAGE_EXT_X, 128)
+Tag[24] = (ML_PAGE_EXT_Y, 128)
+Tag[25] = (ML_PAGE_EXT_Z, 1)
+Tag[26] = (ML_PAGE_EXT_C, 1)
+Tag[27] = (ML_PAGE_EXT_T, 1)
+Tag[28] = (ML_PAGE_EXT_U, 1)
+Tag[29] = (ML_WORLD_MATRIX_00, 0.390183984375)
+Tag[30] = (ML_WORLD_MATRIX_01, 0.015626640625)
+Tag[31] = (ML_WORLD_MATRIX_02, -0.00897205603263974)
+Tag[32] = (ML_WORLD_MATRIX_03, -104.799)
+Tag[33] = (ML_WORLD_MATRIX_10, -0.0109704296875)
+Tag[34] = (ML_WORLD_MATRIX_11, 0.36418046875)
+Tag[35] = (ML_WORLD_MATRIX_12, 0.126207217860818)
+Tag[36] = (ML_WORLD_MATRIX_13, -97.9939)
+Tag[37] = (ML_WORLD_MATRIX_20, 0.0149703515625)
+Tag[38] = (ML_WORLD_MATRIX_21, -0.140414453125)
+Tag[39] = (ML_WORLD_MATRIX_22, 0.326332056161642)
+Tag[40] = (ML_WORLD_MATRIX_23, -13.3976)
+Tag[41] = (ML_WORLD_MATRIX_30, 0)
+Tag[42] = (ML_WORLD_MATRIX_31, 0)
+Tag[43] = (ML_WORLD_MATRIX_32, 0)
+Tag[44] = (ML_WORLD_MATRIX_33, 1)
+Tag[45] = (ML_NUM_C_DIM_INFOS, 1)
+Tag[46] = (ML_C_DIM_INFOS_0, LUMINANCE)
+Tag[47] = (ML_NUM_T_DIM_INFOS, 0)
+Tag[48] = (ML_NUM_U_DIM_INFOS, 0)
+Tag[49] = (ML_NUM_USER_IMAGE_PROPERTY_TAGS, 1)
+Tag[50] = (ML_USER_IMAGE_PROPERTY_TAG_0:DicomTreeImagePropertyExtension:MLDicomTreeImagePropertyExtension, )
+"
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = D:/data/Zoe/data/3978/Session_2/VSurface/VMask.mlimage
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1137 77 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "766 439 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 5
+    threshMin = 0
+    threshMax = 5
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 0
+    changedMax = 100
+  }
+}
+module EuclideanDTF {
+  internal  {
+    frame = "1145 189 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "878 547 487 347"
+        sizeHint = "418 347"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = EuclideanDTF
+    outputMode = DistanceOnly
+    dtfPrecision = FloatPrecision
+    distanceScaling = 1
+    applyTime = OnRequest
+    dimension = 3D
+    minValue = 0.5
+    maxValue = 1.5
+    cacheSizeKB = -1
+    selectedAlgorithm = AutoSelectFastest
+    autoUpdateMode = Off
+    autoUpdateTime = ImmediatelyOnInputChange
+  }
+}
+module Opening {
+  internal  {
+    frame = "1161 285 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1158 506 295 432"
+        sizeHint = "295 432"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Opening
+    useExternalKernel = FALSE
+    externalKernel = ""
+    kernelInfo = "25 elems, 5x5x1x1x1x1"
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    kernelX = 5
+    kernelY = 5
+    kernelZ = 1
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    numKernelElements = 25
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+  }
+}
+connections  {
+  VSurfaceSave.input0 = Arithmetic2.output0
+  Arithmetic2.input0 = IntervalThreshold.output0
+  Arithmetic2.input1 = FastMorphology.output0
+  FastMorphology.input0 = IntervalThreshold.output0
+  VMaskSave.input0 = IntervalThreshold.output0
+  IntervalThreshold.input0 = EuclideanDTF.output0
+  EuclideanDTF.input0 = Opening.output0
+  Opening.input0 = V.output0
+}
+networkModel = ""

@@ -1,0 +1,103 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module ComposePlaneFromPoints {
+  internal  {
+    frame = "1113 61 176 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1183 600 608 391"
+        sizeHint = "306 391"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComposePlaneFromPoints
+    onInputChangeBehavior = Update
+    inPoint1 = "-1.4182756918545 -31.56417716685 4.91872456535"
+    inPoint2 = "-0.0221554331005 29.5812860119 14.4263765813"
+    inPoint3 = "-0.4184807856835 -31.5789022969158 4.9048207479222"
+  }
+}
+module BoundingBoxWithMargin {
+  internal  {
+    frame = "937 -67 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "851 333 931 419"
+        sizeHint = "598 419"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Point2
+    inObjectMinimum = 18
+    inObjectMaximum = 22
+    inMarginX = 0
+    inMarginY = 0
+    inMarginZ = 0
+    inMarginC = 0
+    inMarginT = 0
+    inMarginU = 0
+    inFillValue = 0
+    inEnableBoxClamping = FALSE
+    onInputChangeBehavior = Update
+  }
+}
+module BoundingBoxWithMargin {
+  internal  {
+    frame = "725 -67 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "452 502 931 419"
+        sizeHint = "598 419"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Point1
+    inObjectMinimum = 8
+    inObjectMaximum = 12
+    inMarginX = 0
+    inMarginY = 0
+    inMarginZ = 0
+    inMarginC = 0
+    inMarginT = 0
+    inMarginU = 0
+    inFillValue = 0
+    inEnableBoxClamping = FALSE
+    onInputChangeBehavior = Update
+  }
+}
+module Bypass {
+  internal  {
+    frame = "965 157 72 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = LowerROIPoints
+    noBypass = FALSE
+  }
+}
+connections  {
+  Point2.inImage = LowerROIPoints.output0
+  Point1.inImage = LowerROIPoints.output0
+}
+networkModel = ""

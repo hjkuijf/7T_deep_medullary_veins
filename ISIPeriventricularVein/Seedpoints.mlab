@@ -1,0 +1,735 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module LoadBase {
+  internal  {
+    frame = "893 -2123 88 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = LoadBase
+    autoUpdate = AutoClear
+    nodeName = ""
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "749 -2123 88 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SaveBase
+    nodeName = XMarkerList
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module XMarkerListContainer {
+  internal  {
+    frame = "717 -2019 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "121 538 513 497"
+        sizeHint = "500 497"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "986 214 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Definite
+    listString = ""
+    index = 0
+    persistent = FALSE
+    listStringEnable = FALSE
+    applySelect = FALSE
+    name = ""
+    newName = ""
+    overflowMode = None
+    maxSize = 0
+    useInsertTemplate = TRUE
+    posXYZ = "0 0 0"
+    posC = 0
+    posT = 0
+    posU = 0
+    vecXYZ = "0 0 0"
+    type = 0
+    newPosXYZ = "0 0 0"
+    newPosC = 0
+    newPosT = 0
+    newPosU = 0
+    newVecXYZ = "0 0 0"
+    newType = 0
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "549 -2019 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "195 371 443 255"
+        sizeHint = "441 255"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module SubImage {
+  internal  {
+    frame = "549 -1923 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "403 361 395 533"
+        sizeHint = "395 533"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1058 334 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 7
+    modifyX = TRUE
+    y = 0
+    sy = 7
+    modifyY = TRUE
+    z = 0
+    sz = 7
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = FALSE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelCenterWidth
+    autoApply = TRUE
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "541 -1827 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "860 597 217 64"
+        sizeHint = "215 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic22
+    function = Multiply
+    outputImageSize = AdaptOutputImageSize
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module MarkerToMask {
+  internal  {
+    frame = "561 -1739 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1206 378 265 168"
+        sizeHint = "265 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MarkerToMask
+    maskValue = 1
+    incrementalStartValue = 1
+    backgroundValue = 0
+    autoUpdate = FALSE
+    writeMode = MaskValue
+    outputType = int16
+  }
+}
+module MergeLists {
+  internal  {
+    frame = "577 -1635 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "576 582 318 130"
+        sizeHint = "318 130"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MergeLists
+    updateMode = AutoUpdate
+    alwaysRebuild = TRUE
+    notifyForEachEvent = TRUE
+  }
+}
+module TubularTracking {
+  internal  {
+    frame = "501 -1547 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "815 344 305 571"
+        sizeHint = "305 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TubularTracking
+    minRadius = 0.1
+    maxRadius = 0.7
+    initRadius = 2
+    useInitRadius = FALSE
+    nbrOfSearchAngles = 3
+    maxAngle = 60
+    pruningThreshold = 1
+    terminationThreshold = 3
+    maxNbrSteps = 100
+    maxLength = 100
+    searchDepth = 3
+    minBranchingDistance = 5
+    stepLengthFactor = 1
+    windowSizeFactor = 5
+    allowBranching = FALSE
+    growBidirectional = TRUE
+    useMultipleHypotheses = FALSE
+    toggleMaxSteps = FALSE
+    toggleMaxLength = FALSE
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "561 -1315 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "112 521 414 237"
+        sizeHint = "414 237"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "320 490 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WorldVoxelConvert2
+    voxelX = 0
+    voxelY = 0
+    voxelZ = 0
+    worldX = 0
+    worldY = 0
+    worldZ = 0
+    voxelPos = "0 0 0"
+    worldPos = "0 0 0"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module RectMaskImage {
+  internal  {
+    frame = "565 -1411 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "191 615 517 325"
+        sizeHint = "517 325"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RectMaskImage
+    xPos = 0
+    yPos = 0
+    zPos = 0
+    cPos = 0.5
+    tPos = 0.5
+    uPos = 0.5
+    xPosUnit = Voxels
+    yPosUnit = Voxels
+    zPosUnit = Voxels
+    cPosUnit = Relative
+    tPosUnit = Relative
+    uPosUnit = Relative
+    xSize = 7
+    ySize = 7
+    zSize = 7
+    cSize = 1
+    tSize = 1
+    uSize = 1
+    xSizeUnit = Voxels
+    ySizeUnit = Voxels
+    zSizeUnit = Voxels
+    cSizeUnit = Relative
+    tSizeUnit = Relative
+    uSizeUnit = Relative
+    rectValMode = ImgMax
+    rectVal = 1
+    borderValMode = ImgMin
+    borderVal = 0
+    setCInfo = FALSE
+    setTInfo = FALSE
+    setUInfo = FALSE
+  }
+}
+module XMarkerAtIndex {
+  internal  {
+    frame = "749 -1331 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "822 466 290 326"
+        sizeHint = "290 326"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "346 283 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = XMarkerAtIndex
+    index = 0
+    autoUpdate = TRUE
+  }
+}
+module MaskToMarkers {
+  internal  {
+    frame = "749 -1179 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "826 563 283 132"
+        sizeHint = "283 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MaskToMarkers
+    lowerThreshold = 0.02
+    setType = User
+    type = 0
+    updateMode = Off
+    vectorMode = Zero
+  }
+}
+module LocalMaxima {
+  internal  {
+    frame = "757 -1091 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "807 398 321 462"
+        sizeHint = "321 462"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalMaxima
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    kernelX = 5
+    kernelY = 5
+    kernelZ = 5
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    normalize = TRUE
+    externalKernel = ""
+    useExternalKernel = FALSE
+    intervalMinOfFilteredVoxels = 0.1
+    intervalMaxOfFilteredVoxels = 2000
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 30
+    intervalMaxOfVoxelsForFiltering = 50
+    useIntervalOfVoxelsForFiltering = FALSE
+    autoCalcMinMax = TRUE
+    outputMin = 1
+    outputMax = 0
+    useMinMax = FALSE
+    returnSourceValue = TRUE
+    calculateMinima = FALSE
+    calculateRealMaxima = FALSE
+  }
+}
+module Mask {
+  internal  {
+    frame = "769 -995 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1156 442 371 94"
+        sizeHint = "248 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = UseSmallestInput
+    blending = 0.5
+    background = 0
+  }
+}
+module Vesselness {
+  internal  {
+    frame = "705 -859 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "906 297 207 369"
+        sizeHint = "207 369"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Vesselness
+    startSigma = 0.75
+    endSigma = 1.5
+    nbrOfScales = 4
+    unit = voxel
+    calc2D = FALSE
+    normalizedMeasure = FALSE
+    darkVessels = TRUE
+    autoUpdate = TRUE
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "773 -747 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "860 597 217 64"
+        sizeHint = "215 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic21
+    function = Multiply
+    outputImageSize = AdaptOutputImageSize
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "737 -651 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = Arithmetic2
+    function = Add
+    outputImageSize = AdaptOutputImageSize
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "793 -379 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1053 564 403 380"
+        sizeHint = "403 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2
+    threshWidth = 4
+    threshMin = 0
+    threshMax = 4
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 0
+    changedMax = 100
+  }
+}
+module EuclideanDTF {
+  internal  {
+    frame = "801 -283 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1170 571 487 347"
+        sizeHint = "418 347"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = EuclideanDTF
+    outputMode = DistanceOnly
+    dtfPrecision = FloatPrecision
+    distanceScaling = 1
+    applyTime = OnRequest
+    dimension = 3D
+    minValue = 0.5
+    maxValue = 1.5
+    cacheSizeKB = -1
+    selectedAlgorithm = AutoSelectFastest
+    autoUpdateMode = Off
+    autoUpdateTime = ImmediatelyOnInputChange
+  }
+}
+module PlaneClip {
+  internal  {
+    frame = "945 -559 96 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "834 525 274 209"
+        sizeHint = "267 209"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ClipBottom
+    plane = "-0.0114735428992112 0.153891700217756 -0.988021104236862 -9.7009959196817"
+    autoApply = TRUE
+    intersectionMode = IntersectionModeMidpoint
+    volumeThreshold = 0.5
+    useGlobalSubsample = TRUE
+    globalSubsample = 4
+    xSubsample = 4
+    ySubsample = 4
+    zSubsample = 4
+  }
+}
+module PlaneClip {
+  internal  {
+    frame = "821 -559 88 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "834 525 274 209"
+        sizeHint = "267 209"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ClipRight
+    plane = "0.999794906171 -0.0147251300658348 -0.0139038174278017 6.15619673432395"
+    autoApply = TRUE
+    intersectionMode = IntersectionModeMidpoint
+    volumeThreshold = 0.5
+    useGlobalSubsample = TRUE
+    globalSubsample = 4
+    xSubsample = 4
+    ySubsample = 4
+    zSubsample = 4
+  }
+}
+module PlaneClip {
+  internal  {
+    frame = "701 -559 88 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "834 525 274 209"
+        sizeHint = "267 209"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ClipLeft
+    plane = "0.999794906171 -0.0147251300658348 -0.0139038174278017 -8.84380326567605"
+    autoApply = TRUE
+    intersectionMode = IntersectionModeMidpoint
+    volumeThreshold = 0.5
+    useGlobalSubsample = TRUE
+    globalSubsample = 4
+    xSubsample = 4
+    ySubsample = 4
+    zSubsample = 4
+  }
+}
+module ScaleWithHistogramParameters {
+  internal  {
+    frame = "537 -259 208 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1037 359 444 561"
+        sizeHint = "444 561"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ScaleWithHistogramParameters
+    useMask = TRUE
+    maskMode = Weights
+    useBackgroundValue = FALSE
+    backgroundValue = 0
+    quantileArg = 0
+    quantile2Arg = 95
+    outputMax = 1
+    outputMin = 0
+    typeSelect = Float
+    updateMode = AutoUpdate
+  }
+}
+module Bypass {
+  internal  {
+    frame = "777 -115 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "917 619 116 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VSurface
+    noBypass = TRUE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "669 -115 72 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "917 619 116 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = V
+    noBypass = TRUE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "557 -115 72 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "917 619 116 20"
+        sizeHint = "100 20"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = E2
+    noBypass = TRUE
+  }
+}
+connections  {
+  SaveBase.inObject = Definite.outXMarkerList
+  Definite.newPosXYZ = XMarkerAtIndex.position6D
+  Definite.newVecXYZ = MinMaxScan.trueMaxValue
+  MinMaxScan.input0 = SubImage.output0
+  SubImage.input0 = Arithmetic22.output0
+  SubImage.x = WorldVoxelConvert2.voxelX
+  SubImage.y = WorldVoxelConvert2.voxelY
+  SubImage.z = WorldVoxelConvert2.voxelZ
+  Arithmetic22.input0 = Vesselness.output0
+  Arithmetic22.input1 = MarkerToMask.output0
+  MarkerToMask.input0 = Vesselness.output0
+  MarkerToMask.inputXMarkerList = MergeLists.outList
+  MergeLists.inList1 = TubularTracking.outputTrackedPoints
+  MergeLists.inList2 = XMarkerAtIndex.outputXMarkerList
+  TubularTracking.input0 = Vesselness.output0
+  TubularTracking.input1 = RectMaskImage.outImage
+  TubularTracking.inputInitPoints = XMarkerAtIndex.outputXMarkerList
+  WorldVoxelConvert2.input0 = Vesselness.output0
+  WorldVoxelConvert2.worldPos = XMarkerAtIndex.position3D
+  RectMaskImage.inImage = Vesselness.output0
+  RectMaskImage.xPos = WorldVoxelConvert2.voxelX
+  RectMaskImage.yPos = WorldVoxelConvert2.voxelY
+  RectMaskImage.zPos = WorldVoxelConvert2.voxelZ
+  XMarkerAtIndex.inputXMarkerList = MaskToMarkers.outputXMarkerList
+  MaskToMarkers.input0 = LocalMaxima.output0
+  LocalMaxima.input0 = Mask.output0
+  Mask.input0 = Vesselness.output0
+  Mask.input1 = VSurface.output0
+  Vesselness.input0 = ScaleWithHistogramParameters.output0
+  Vesselness.input1 = Arithmetic21.output0
+  Arithmetic21.input0 = Arithmetic2.output0
+  Arithmetic21.input1 = ClipBottom.output1
+  Arithmetic2.input0 = ClipLeft.output1
+  Arithmetic2.input1 = ClipRight.output0
+  IntervalThreshold.input0 = EuclideanDTF.output0
+  EuclideanDTF.input0 = VSurface.output0
+  ClipBottom.input0 = IntervalThreshold.output0
+  ClipRight.input0 = IntervalThreshold.output0
+  ClipLeft.input0 = IntervalThreshold.output0
+  ScaleWithHistogramParameters.input0 = E2.output0
+  ScaleWithHistogramParameters.input1 = V.output0
+}
+networkModel = ""

@@ -1,0 +1,125 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module Bypass {
+  internal  {
+    frame = "1181 617 72 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = E2
+    noBypass = FALSE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1085 617 72 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = T1
+    noBypass = FALSE
+  }
+}
+module Reformat {
+  internal  {
+    frame = "1093 413 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1127 382 418 614"
+        sizeHint = "402 614"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Reformat
+    matrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useInventorComposition = FALSE
+    composeMatrix = TRUE
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    center = "0 0 0"
+    fillValue = 0
+    interactive = TRUE
+    autoCenter = TRUE
+    interpolation = NearestNeighbor
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    button1Translate = Pressed
+    button2Translate = Released
+    button3Translate = Released
+    shiftTranslate = Released
+    ctrlTranslate = Released
+    altTranslate = Released
+    button1Rotate = Pressed
+    button2Rotate = Released
+    button3Rotate = Released
+    shiftRotate = Pressed
+    ctrlRotate = Released
+    altRotate = Released
+    updateMode = AutoUpdate
+  }
+}
+module Resample3D {
+  internal  {
+    frame = "1149 517 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "810 721 327 337"
+        sizeHint = "327 337"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Resample3D
+    keep = "Scale factor"
+    filter = Nearest_Neighbor
+    isotropic = FALSE
+    filterAlways = FALSE
+    filterAlwaysTolerance = 0
+    zoom = "1 1 0.1"
+    imageSize = "512 512 34"
+    voxelSize = "0.390625 0.390625 3.50002039612838"
+    subVoxelShift = "0 0 0"
+    useReferenceImage = FALSE
+  }
+}
+module MidsagittalPlane {
+  internal  {
+    frame = "1101 309 72 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "824 647 343 247"
+        sizeHint = "343 247"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MidsagittalPlane
+    onInputChangeBehavior = Clear
+    inBins = 64
+  }
+}
+connections  {
+  Reformat.input0 = T1.output0
+  Reformat.input1 = Resample3D.output0
+  Resample3D.input0 = E2.output0
+  MidsagittalPlane.input0 = Reformat.output0
+}
+networkModel = ""

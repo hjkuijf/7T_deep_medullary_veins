@@ -1,0 +1,58 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = BaseBypass.baseIn0
+    }
+    Field inVesselPoints {
+      internalName = VesselPoints.baseIn0
+    }
+  }
+  Outputs {
+    Field outputXMarkerList {
+      internalName = LoadBase.outObject
+    }
+    Field outputDefinite {
+      internalName = LoadBase1.outObject
+    }
+    Field outputROI {
+      internalName = LoadBase2.outObject
+    }
+    Field outputVesselPoints {
+      internalName = LoadBase3.outObject
+    }
+    Field outWMH {
+      internalName = MLImageFormatLoad.output0
+    }
+  }
+  Parameters {  
+    Field outputDir {
+      type = String
+    }
+    Field getOutput { type = Trigger }
+    
+    Field inputT1_to_E2 { type = String }
+    Field inputMNI_to_T1 { type = String }
+    
+    Field update {
+      type = Trigger
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/SeedpointsToMNI.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+  }
+}

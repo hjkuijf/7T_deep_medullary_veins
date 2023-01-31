@@ -1,0 +1,46 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = LowerROIPoints.input0
+    }
+  }
+  Outputs {}
+  Parameters {
+    Field outputDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    Field inputMSP {
+      type = Plane 
+    }
+    
+    Field getOutput {
+      type = Trigger
+    }
+    Field outputPlane {
+      type = Plane
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/LowerROI.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+    
+    Field outputPlane {}
+  }
+}

@@ -1,0 +1,187 @@
+//----------------------------------------------------------------------------------
+//! Macro module PeriventricularVeinDetection
+/*!
+// \file    PeriventricularVeinDetection.script
+// \author  Hugo
+// \date    2014-08-07
+//
+// 
+*/
+//----------------------------------------------------------------------------------
+
+Interface {
+  Inputs {}
+  Outputs {}
+  
+  Parameters {
+    Field subjectDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    
+    Field progress {
+      type  = Double
+      value = 0.0
+    }
+    
+    Field t1Filename { type = String }
+    Field e2Filename { type = String }
+    
+    Field doSPM {
+      type  = Bool
+      value = True
+    }
+    Field doMNI {
+      type  = Bool
+      value = True
+    }
+    Field doVSurface {
+      type  = Bool
+      value = True
+    }
+    Field doMSP {
+      type  = Bool
+      value = True
+    }
+    Field doLowerROI {
+      type  = Bool
+      value = True
+    }
+    Field doSeedpoints {
+      type  = Bool
+      value = True
+    }
+    Field doTracking {
+      type  = Bool
+      value = False
+    }
+    Field doSeedpointsToMNI {
+      type  = Bool
+      value = False
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/PeriventricularVeinDetection.py
+  
+  FieldListener update {
+    command = do
+  }
+  FieldListener subjectDir {
+    command = subjectDirChanged
+  }
+  
+  initCommand = init
+}
+
+Window {
+  Category Main {   
+    
+    Box Data {
+      Field subjectDir {
+        browseButton = True
+        browseMode   = directory
+      }
+    
+      Field t1Filename { title = T1: }
+      Field e2Filename { title = E2: }
+      
+      Label {
+        title    = "Filenames are automatically detected, please correct if wrong." 
+        textWrap = WordBreak
+      }
+    }
+    
+    Button update {
+      expandX = Expanding
+    }
+    
+    
+    ProgressBar progress {}
+    
+    Label {
+      textFormat = Rich
+      textWrap   = WordBreak
+      title      = "<h2>Usage</h2>
+      
+      Create a folder for each subject. Within this folder should be the files for the T1 and the T2*/SWI/GRE scan. Press Update.
+
+<h3>Subject folder</h3>
+For each subject, the folder should contain the T1 and SWI files (e.g. T1.nii.gz and SWI.nii.gz). When you choose the subject folder, the application will show the detected filenames. If there are more files in the folder, please verify that it selected the correct files.
+
+<h3>Run app</h3>
+When you press Update, the microbleed detection algorithm will start. This process takes 10 - 60 minutes (depending on your workstation), requires 3 GB of RAM, and uses 1 CPU core. The application will perform the following steps (see also Settings):
+
+<ul>
+<li><b>SPM:</b> create a brain segmentation using Matlab and SPM.</li>
+<li><b>Create mask:</b> from the brain segmentation, a brain mask is created.</li>
+<li><b>Align scans:</b> the SWI and MPRAGE will be aligned using elastix.</li>
+<li><b>Compute RST:</b> the RST algorithm will run.</li>
+<li><b>Extract microbleeds:</b> potential microbleed locations are extracted from the RST results.</li>
+<li><b>MinIP:</b> false positive locations are removed by a minimum intensity projection analysis.</li>
+</ul>
+      
+<h3>Output</h3>
+Output of each of the above steps is saved in a separate folder within the subject folder. Use the MicrobleedScoring application to assess the results. The final detections are saved in MinIP/final.xml."
+    }
+  }
+  
+  Category Settings {
+    
+    Box "Actions" {
+      CheckBox doSPM {
+        title = "Do SPM"
+      }
+      
+      CheckBox doMNI {
+        title = "Do MNI"
+      }
+      
+      CheckBox doVSurface {
+        title = "Do VSurface"
+      }
+      
+      CheckBox doMSP {
+        title = "Do MSP"
+      }
+      
+      CheckBox doLowerROI {
+        title = "Do LowerROI"
+      }
+      
+      CheckBox doSeedpoints {
+        title = "Do Seedpoints"
+      }
+      
+      CheckBox doTracking {
+        title = "Do 3D tracking"
+      }
+      
+      CheckBox doSeedpointsToMNI {
+        title = "Do shizzles to MNI"
+      }
+      
+      Label {
+        textWrap = WordBreak
+        title    = "You can disable actions if they were computed before, but want to redo later actions. If you want to redo a step, please remove the existing output folder(s) first."
+      }
+      
+    }
+  }
+  
+  Category Advanced {
+    
+    CheckBox advancedSettings {
+      title = "Show advanced settings"
+    }
+    TabView {
+      dependsOn = advancedSettings
+      visibleOn = advancedSettings
+      mode      = toolbox
+        
+    }
+  }
+}

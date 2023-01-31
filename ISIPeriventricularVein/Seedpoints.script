@@ -1,0 +1,56 @@
+Interface  {
+  Inputs  {
+    Field inputE2 {
+      internalName = E2.input0
+    }
+    Field inputV {
+      internalName = V.input0
+    }
+    Field inputVSurface {
+      internalName = VSurface.input0
+    }
+  }
+  Outputs {
+    Field outputXMarkerList {
+      internalName = LoadBase.outObject
+      type = XMarkerList
+    }
+  }
+  Parameters {
+    Field inputMSP { type = Plane }
+    Field inputLowerROI { type = Plane }
+    
+    
+    Field outputDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    
+    Field getOutput {
+      type = Trigger
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/Seedpoints.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+  
+  initCommand = init
+}
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+    
+  }
+}

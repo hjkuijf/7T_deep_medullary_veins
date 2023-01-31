@@ -1,0 +1,210 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module LoadBase {
+  internal  {
+    frame = "933 -367 120 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Definite
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "937 -831 160 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LoadVesselPoints
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "773 -827 120 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "717 532 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LoadVesselGraph
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "841 -715 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = VesselPoints
+    nodeName = XMarkerList
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module SaveBase {
+  internal  {
+    frame = "717 -719 104 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = VesselGraph
+    nodeName = Graph
+    filename = object
+    useBaseDir = FALSE
+    baseDir = ""
+    format = XML
+    autoSave = FALSE
+    allowOverwrite = TRUE
+  }
+}
+module TubularTracking {
+  internal  {
+    frame = "765 -603 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "961 349 305 571"
+        sizeHint = "305 571"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TubularTracking
+    minRadius = 0.15
+    maxRadius = 0.5
+    initRadius = 2
+    useInitRadius = FALSE
+    nbrOfSearchAngles = 3
+    maxAngle = 10
+    pruningThreshold = 1
+    terminationThreshold = 10
+    maxNbrSteps = 100
+    maxLength = 100
+    searchDepth = 3
+    minBranchingDistance = 5
+    stepLengthFactor = 1
+    windowSizeFactor = 5
+    allowBranching = TRUE
+    growBidirectional = TRUE
+    useMultipleHypotheses = TRUE
+    toggleMaxSteps = FALSE
+    toggleMaxLength = FALSE
+  }
+}
+module Arithmetic1 {
+  internal  {
+    frame = "765 -475 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "826 597 285 64"
+        sizeHint = "283 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic11
+    function = Invert
+    constant = 0
+  }
+}
+module Arithmetic1 {
+  internal  {
+    frame = "633 -467 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "826 597 285 64"
+        sizeHint = "283 64"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic1
+    function = Invert
+    constant = 0
+  }
+}
+module Bypass {
+  internal  {
+    frame = "769 -363 112 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = VMask
+    noBypass = FALSE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "629 -367 104 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = E2
+    noBypass = FALSE
+  }
+}
+connections  {
+  VesselPoints.inObject = TubularTracking.outputTrackedPoints
+  VesselGraph.inObject = TubularTracking.outputGraph
+  TubularTracking.input0 = Arithmetic1.output0
+  TubularTracking.input1 = Arithmetic11.output0
+  TubularTracking.inputInitPoints = Definite.outObject
+  Arithmetic11.input0 = VMask.output0
+  Arithmetic1.input0 = E2.output0
+}
+networkModel = ""

@@ -1,0 +1,885 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module Transformix {
+  internal  {
+    frame = "825 -307 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "822 422 536 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix3
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = C:/Users/user/AppData/Local/Temp
+    transformationFile = ""
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = FALSE
+    succeeded = FALSE
+    logToDebugOutput = TRUE
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "1009 13 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "801 424 332 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = T1_at_SWI_Save
+    compression = BZip2
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = FALSE
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    updateMode = AutoUpdate
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = ""
+  }
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "1549 -435 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "742 424 450 411"
+        sizeHint = "450 411"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = T1_at_SWI
+    updateMode = AutoUpdate
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    suppressCheckSumTests = FALSE
+    fileName = ""
+  }
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "1349 -439 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "742 424 450 411"
+        sizeHint = "450 411"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LowerROIPointsImage
+    updateMode = AutoUpdate
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    suppressCheckSumTests = FALSE
+    fileName = ""
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "789 -543 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "801 424 332 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LowerROIPointsSave
+    compression = BZip2
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = FALSE
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    updateMode = AutoUpdate
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = ""
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "813 -443 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "845 617 466 255"
+        sizeHint = "448 255"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module MarkerToMask {
+  internal  {
+    frame = "841 -91 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "835 545 265 168"
+        sizeHint = "265 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MarkerToMask
+    maskValue = 1
+    incrementalStartValue = 1
+    backgroundValue = 0
+    autoUpdate = TRUE
+    writeMode = MarkerType
+    outputType = int16
+  }
+}
+module Transformix {
+  internal  {
+    frame = "825 -211 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1151 318 476 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix2
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = C:/Users/hugo/AppData/Local/Temp
+    transformationFile = ""
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = TRUE
+    succeeded = TRUE
+    logToDebugOutput = TRUE
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "845 113 168 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "84 550 420 212"
+        sizeHint = "420 212"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LowerROIPointsFilename
+    localName = $(NETWORK)/mni/lower_roi_points.xml
+    checkIfFileExists = TRUE
+  }
+}
+module LoadBase {
+  internal  {
+    frame = "845 17 120 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "698 628 500 195"
+        sizeHint = "483 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LowerROIPoints
+    autoUpdate = AutoUpdate
+    nodeName = ""
+    filename = D:/Hugo/MeVisLab/ISI/Hugo/Modules/Macros/ISIPeriventricularVein/mni/lower_roi_points.xml
+    useBaseDir = FALSE
+    baseDir = ""
+    format = Auto
+  }
+}
+module MLImageFormatLoad {
+  internal  {
+    frame = "1253 -311 152 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "742 424 450 411"
+        sizeHint = "450 411"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = V
+    updateMode = AutoUpdate
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    applyMode = AutoUpdate
+    suppressCheckSumTests = FALSE
+    fileName = ""
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1429 13 72 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = CSF
+    noBypass = FALSE
+  }
+}
+module MLImageFormatSave {
+  internal  {
+    frame = "1461 -347 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "801 424 502 410"
+        sizeHint = "332 410"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MLImageFormatSave
+    compression = BZip2
+    dblHintVal0 = 0
+    intHintVal0 = 0
+    strHintVal0 = FALSE
+    boolHintVal0 = FALSE
+    dblHintVal1 = 0
+    intHintVal1 = 0
+    strHintVal1 = ""
+    boolHintVal1 = FALSE
+    dblHintVal2 = 0
+    intHintVal2 = 0
+    strHintVal2 = ""
+    boolHintVal2 = FALSE
+    dblHintVal3 = 0
+    intHintVal3 = 0
+    strHintVal3 = ""
+    boolHintVal3 = FALSE
+    dblHintVal4 = 0
+    intHintVal4 = 0
+    strHintVal4 = ""
+    boolHintVal4 = FALSE
+    dblHintVal5 = 0
+    intHintVal5 = 0
+    strHintVal5 = ""
+    boolHintVal5 = FALSE
+    dblHintVal6 = 0
+    intHintVal6 = 0
+    strHintVal6 = ""
+    boolHintVal6 = FALSE
+    dblHintVal7 = 0
+    intHintVal7 = 0
+    strHintVal7 = ""
+    boolHintVal7 = FALSE
+    dblHintVal8 = 0
+    intHintVal8 = 0
+    strHintVal8 = ""
+    boolHintVal8 = FALSE
+    dblHintVal9 = 0
+    intHintVal9 = 0
+    strHintVal9 = ""
+    boolHintVal9 = FALSE
+    updateMode = AutoUpdate
+    userTag00 = ""
+    userTag01 = ""
+    userTag02 = ""
+    userTag03 = ""
+    userTag04 = ""
+    userTag05 = ""
+    userTag06 = ""
+    userTag07 = ""
+    userTag08 = ""
+    userTag09 = ""
+    regionOffset = "0 0 0 0 0 0"
+    suppressWorldPos = FALSE
+    fileName = ""
+  }
+}
+module Transformix {
+  internal  {
+    frame = "1449 -243 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "822 422 349 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix1
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = D:/data/Zoe/data/3978/Session_2/MNI/temp/t12e2
+    transformationFile = ""
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = FALSE
+    succeeded = TRUE
+    logToDebugOutput = TRUE
+  }
+}
+module Arithmetic {
+  internal  {
+    frame = "1493 -131 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "960 120 577 511"
+        sizeHint = "577 511"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic
+    expression = "a>0.8 && (b==3 || b == 9)"
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = TRUE
+    dataType = int8
+    setDataType = FALSE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = " * (b == 3 || b == 9)"
+    scalarVariablesComment = ""
+  }
+}
+module Transformix {
+  internal  {
+    frame = "1521 141 192 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1102 293 349 414"
+        sizeHint = "291 414"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Transformix
+    tranformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    workingDirectory = D:/data/Zoe/data/3978/Session_2/MNI/temp/mni2t1
+    transformationFile = ""
+    autoUpdateTransformationFile = FALSE
+    createImage = TRUE
+    createDeformationField = FALSE
+    createJacobianField = FALSE
+    createJacobianMatrixField = FALSE
+    isDeformationFieldPossible = FALSE
+    succeeded = TRUE
+    logToDebugOutput = TRUE
+  }
+}
+module Elastix {
+  internal  {
+    frame = "1285 149 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "65 299 993 808"
+        sizeHint = "434 808"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MNI_to_T1
+    temporaryDirectory = D:/data/Zoe/data/3978/Session_2/MNI/temp/mni2t1
+    parameterFile1 = D:/Hugo/MeVisLab/ISI/Hugo/Modules/Macros/ISIPeriventricularVein/mni/to_mni.txt
+    parameterFile2 = D:/Hugo/MeVisLab/ISI/Hugo/Modules/Macros/ISIPeriventricularVein/mni/bspline_mni_to_ad.txt
+    parameterFile3 = ""
+    otherArguments = ""
+    status = initialized
+    elastixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\elastix.exe"
+    transformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    elastixOutput = ""
+    removeIntermediateFiles = TRUE
+    sendOutputToLogWindowTo = FALSE
+    createDeformationField = FALSE
+    createJacobianImage = FALSE
+    createJacobianMatrixImage = FALSE
+    numberOfThreads = 4
+    initialTransformationFile = ""
+    outputImageDataType = float
+    selectedPreset = windows64_v4.7
+    presets = ,linux64_v4.6,windows32_v4.7,windows64_v4.7
+    logToDebugOutput = TRUE
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "1137 -39 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "71 163 420 212"
+        sizeHint = "420 212"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BSplineFilename
+    localName = $(NETWORK)/mni/bspline_mni_to_ad.txt
+    checkIfFileExists = TRUE
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "1145 57 112 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "71 163 420 212"
+        sizeHint = "420 212"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AffineFilename
+    localName = $(NETWORK)/mni/to_mni.txt
+    checkIfFileExists = TRUE
+  }
+}
+module Elastix {
+  internal  {
+    frame = "1077 149 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "166 238 434 808"
+        sizeHint = "434 808"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 736 699"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = T1_to_E2
+    temporaryDirectory = D:/data/Zoe/data/3978/Session_2/MNI/temp/t12e2
+    parameterFile1 = D:/Hugo/MeVisLab/ISI/Hugo/Modules/Macros/ISIPeriventricularVein/mni/to_mni.txt
+    parameterFile2 = ""
+    parameterFile3 = ""
+    otherArguments = ""
+    status = initialized
+    elastixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\elastix.exe"
+    transformixExecutable = "D:/MeVisLab/ISI/Registration\\bin\\elastix\\windows64_v4.7\\transformix.exe"
+    elastixOutput = ""
+    removeIntermediateFiles = TRUE
+    sendOutputToLogWindowTo = FALSE
+    createDeformationField = TRUE
+    createJacobianImage = FALSE
+    createJacobianMatrixImage = FALSE
+    numberOfThreads = 2
+    initialTransformationFile = ""
+    outputImageDataType = float
+    selectedPreset = windows64_v4.7
+    presets = ,linux64_v4.6,windows32_v4.7,windows64_v4.7
+    logToDebugOutput = TRUE
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "1545 293 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "482 401 632 395"
+        sizeHint = "299 395"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Atlas_CSF
+    fileDataType = "unsigned int8"
+    autoDetermineDataType = TRUE
+    correctSubVoxelShift = TRUE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = TypeNotApplicable
+    componentType = "unsigned int8"
+    pixelType = SCALAR
+    loaderType = NiftiImageIO
+    outputMetaDataStr = "ITK_FileNotes : 
+aux_file : 
+bitpix : 8
+cal_max : 0
+cal_min : 0
+datatype : 2
+descrip : 
+dim[0] : 3
+dim[1] : 193
+dim[2] : 229
+dim[3] : 193
+dim[4] : 1
+dim[5] : 1
+dim[6] : 1
+dim[7] : 1
+dim_info : 
+intent_code : 0
+intent_name : 
+intent_p1 : 0
+intent_p2 : 0
+intent_p3 : 0
+pixdim[0] : 1
+pixdim[1] : 1
+pixdim[2] : 1
+pixdim[3] : 1
+pixdim[4] : 0
+pixdim[5] : 0
+pixdim[6] : 0
+pixdim[7] : 0
+qform_code : 2
+qoffset_x : -96
+qoffset_y : -132
+qoffset_z : -78
+quatern_b : 0
+quatern_c : 0
+quatern_d : 0
+scl_inter : 0
+scl_slope : 1
+sform_code : 1
+slice_code : 
+slice_duration : 0
+slice_end : 0
+slice_start : 0
+srow_x : 1 0 -0 -96
+srow_y : 0 1 -0 -132
+srow_z : 0 0 1 -78
+toffset : 0
+vox_offset : 352
+xyzt_units : 
+"
+    unresolvedFileName = $(NETWORK)/mni/atlas_csf.nii
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "1549 397 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "840 746 420 212"
+        sizeHint = "420 212"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Atlas_CSFFilename
+    localName = $(NETWORK)/mni/atlas_csf.nii
+    checkIfFileExists = TRUE
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "1333 293 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "482 401 649 395"
+        sizeHint = "299 395"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MNI_T1
+    fileDataType = float
+    autoDetermineDataType = TRUE
+    correctSubVoxelShift = TRUE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = TypeNotApplicable
+    componentType = float
+    pixelType = SCALAR
+    loaderType = NiftiImageIO
+    outputMetaDataStr = "ITK_FileNotes : mnc2nii mni_icbm152_nlin_sym_09c/mni_icbm152_t1_tal_nlin_sym_09c.mnc mni_icbm15
+aux_file : 
+bitpix : 16
+cal_max : 100
+cal_min : 0
+datatype : 4
+descrip : mnc2nii mni_icbm152_nlin_sym_09c/mni_icbm152_t1_tal_nlin_sym_09c.mnc mni_icbm15
+dim[0] : 3
+dim[1] : 193
+dim[2] : 229
+dim[3] : 193
+dim[4] : 1
+dim[5] : 1
+dim[6] : 0
+dim[7] : 0
+dim_info : 
+intent_code : 0
+intent_name : 
+intent_p1 : 0
+intent_p2 : 0
+intent_p3 : 0
+pixdim[0] : 0
+pixdim[1] : 1
+pixdim[2] : 1
+pixdim[3] : 1
+pixdim[4] : 0
+pixdim[5] : 1
+pixdim[6] : 0
+pixdim[7] : 0
+qform_code : 0
+qoffset_x : 0
+qoffset_y : 0
+qoffset_z : 0
+quatern_b : 0
+quatern_c : 0
+quatern_d : 0
+scl_inter : 49.2854
+scl_slope : 0.00150375
+sform_code : 4
+slice_code : 
+slice_duration : 0
+slice_end : 0
+slice_start : 0
+srow_x : 1 0 0 -96
+srow_y : 0 1 0 -132
+srow_z : 0 0 1 -78
+toffset : 0
+vox_offset : 352
+xyzt_units : 
+
+"
+    unresolvedFileName = $(NETWORK)/mni/mni_icbm152_t1_tal_nlin_sym_09c.nii
+  }
+}
+module LocalFileName {
+  internal  {
+    frame = "1337 385 128 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "840 746 420 212"
+        sizeHint = "420 212"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MNI_T1Filename
+    localName = $(NETWORK)/mni/mni_icbm152_t1_tal_nlin_sym_09c.nii
+    checkIfFileExists = TRUE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1021 409 72 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = E2
+    noBypass = FALSE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "1157 417 72 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = T1
+    noBypass = FALSE
+  }
+}
+connections  {
+  Transformix3.input0 = Transformix2.outputImage
+  Transformix3.tranformixExecutable = T1_to_E2.transformixExecutable
+  Transformix3.transformationFile = T1_to_E2.resultingTransformationFileCopy
+  T1_at_SWI_Save.input0 = T1_to_E2.transformedImage
+  LowerROIPointsSave.input0 = MinMaxScan.output0
+  MinMaxScan.input0 = Transformix3.outputImage
+  MarkerToMask.input0 = MNI_T1.output0
+  MarkerToMask.inputXMarkerList = LowerROIPoints.outObject
+  Transformix2.input0 = MarkerToMask.output0
+  Transformix2.tranformixExecutable = T1_to_E2.transformixExecutable
+  Transformix2.transformationFile = MNI_to_T1.resultingTransformationFileCopy
+  LowerROIPoints.filename = LowerROIPointsFilename.trueName
+  MLImageFormatSave.input0 = Transformix1.outputImage
+  Transformix1.input0 = Arithmetic.output0
+  Transformix1.tranformixExecutable = T1_to_E2.transformixExecutable
+  Transformix1.transformationFile = T1_to_E2.resultingTransformationFileCopy
+  Arithmetic.input0 = CSF.output0
+  Arithmetic.input1 = Transformix.outputImage
+  Transformix.input0 = Atlas_CSF.output0
+  Transformix.tranformixExecutable = MNI_to_T1.transformixExecutable
+  Transformix.transformationFile = MNI_to_T1.resultingTransformationFileCopy
+  MNI_to_T1.fixedImage = T1.output0
+  MNI_to_T1.movingImage = MNI_T1.output0
+  MNI_to_T1.parameterFile1 = AffineFilename.trueName
+  MNI_to_T1.parameterFile2 = BSplineFilename.trueName
+  T1_to_E2.fixedImage = E2.output0
+  T1_to_E2.movingImage = T1.output0
+  T1_to_E2.parameterFile1 = AffineFilename.trueName
+  Atlas_CSF.unresolvedFileName = Atlas_CSFFilename.trueName
+  MNI_T1.unresolvedFileName = MNI_T1Filename.trueName
+}
+networkModel = ""

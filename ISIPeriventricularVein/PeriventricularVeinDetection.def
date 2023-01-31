@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! PeriventricularVeinDetection module definition
+/*!
+// \file    PeriventricularVeinDetection.def
+// \author  Hugo
+// \date    2014-08-07
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule PeriventricularVeinDetection {
+  genre              = ""
+  author             = "Hugo"
+  comment            = ""
+  keywords           = ""
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/PeriventricularVeinDetection.script"
+}

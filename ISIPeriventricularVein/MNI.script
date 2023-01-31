@@ -1,0 +1,55 @@
+Interface  {
+  Inputs  {
+    Field inputT1 {
+      internalName = T1.input0
+    }
+    Field inputE2 {
+      internalName = E2.input0
+    }
+    Field inputCSF {
+      internalName = CSF.input0
+    }
+  }
+  Outputs {
+    Field output0 {
+      internalName = V.output0
+    }
+    Field output1 {
+      internalName = LowerROIPointsImage.output0
+    }  
+    Field output2 {
+      internalName = T1_at_SWI.output0
+    }  
+  }
+  Parameters {
+    Field outputDir {
+      type = String
+    }
+    Field getOutput { type = Trigger }
+    
+    Field outputT1_to_E2 { type = String }
+    Field outputMNI_to_T1 { type = String }
+    
+    Field update {
+      type = Trigger
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/MNI.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+  }
+}

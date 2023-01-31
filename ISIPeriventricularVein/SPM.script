@@ -1,0 +1,42 @@
+Interface  {
+  Inputs {
+    Field input0 {
+      internalName = Bypass.input0
+    }
+  }
+  Outputs {
+    Field outputC1 { internalName = c1.output0 }
+    Field outputC2 { internalName = c2.output0 }
+    Field outputC3 { internalName = c3.output0 }
+    Field outputC4 { internalName = c4.output0 }
+    Field outputC5 { internalName = c5.output0 }
+    Field outputC6 { internalName = c6.output0 }
+  }
+  Parameters {
+    Field outputDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    
+    Field getOutput { type = Trigger }
+  }  
+}
+
+Commands {
+  source = $(LOCAL)/SPM.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    Button update {}
+  }
+}

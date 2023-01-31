@@ -1,0 +1,47 @@
+Interface  {
+  Inputs {
+    Field input0 {
+      internalName = V.input0
+    }
+  }
+  Outputs {
+    Field outputMask {
+      internalName = VMask.output0
+    }
+    Field outputSurface {
+      internalName = VSurface.output0
+    }
+  }
+  Parameters {
+    Field outputDir {
+      type = String
+    }
+    Field update {
+      type = Trigger
+    }
+    
+    Field getOutput {
+      type = Trigger
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/VSurface.py
+  
+  FieldListener update { command = do }  
+  FieldListener getOutput { command = getOutput }
+}
+
+
+Window {
+  Category {
+    Field outputDir {
+      browseButton = True
+      browseMode   = directory
+    }
+    
+    Button update {}
+    
+  }
+}
